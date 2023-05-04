@@ -1,0 +1,128 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body
+{
+    font-family: cursive;  
+      
+}
+
+.container{
+    display: flex;
+    justify-content: space-around;
+    align-content: center;
+    width: 100%;
+    padding: 30px;
+    height: 100%;
+    position: absolute;
+    background: url("Image/main.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.login-box
+{
+    width: 320px;
+    height: 420px;
+    background: rgba(0, 0, 0, 0.70);
+    border-radius: 5%;
+    color: #fff;
+    top: 50%;
+    left: 50%;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    box-sizing: border-box;
+    padding: 75px 30px;
+    margin: 0 10px;
+    font-weight: bold;
+}
+
+
+h2
+{
+    font-size: 20px;
+    text-align: center;
+    text-decoration: underline;
+    padding-bottom: 25px;
+}
+
+.login-box input
+{
+    
+    width: 250px;
+    margin-bottom: 25px;
+    
+}
+.login-box input[type="text"], input[type="password"], input[type="submit"]
+{
+    border: none;
+    border-bottom: 1px solid #fff;
+    background: transparent;
+    outline: none;
+    height: 40px;
+    color: #fff;
+    font-size: 20px;
+    
+}
+.login-box input[type="submit"]
+{
+    border: 1px solid;     
+    outline: none;
+    height: 40px;
+    color: #fff;
+    font-size: 20px;
+    font-weight: bold;
+    border-radius: 15px;
+}
+.login-box input[type="submit"]:hover
+{
+    border: 5px solid transparent; 
+    outline: none;
+    height: 40px;
+    color: #fff;
+    font-size: 15px;
+    font-weight: bold;
+    border-radius: 15px;
+}
+.login-box a
+{
+    text-decoration: underline;
+    color: azure;
+    font-family: arial;
+    text-decoration: none;
+    
+}
+.login-box a:hover
+{
+    text-decoration: underline;
+    color: cornflowerblue;
+    font-family: arial;
+    text-decoration: none;
+}
+
+/*--- media query ---*/
+@media (max-width:320px){
+    .login-box {
+    width: 250px;
+    height: 420px;
+    background: rgba(0, 0, 0, 0.70);
+    border-radius: 5%;
+    color: #fff;
+    top: 50%;
+    left: 50%;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    box-sizing: border-box;
+    font-weight: bold;
+    }
+    .login-box input
+{
+    
+    width: 200px;
+    margin-bottom: 25px;
+    
+}
+}
